@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog
+import argparse
+
 import numpy as np
 from matplotlib import image as im
 from matplotlib import pyplot as plt
@@ -262,5 +264,13 @@ def canny_edge_detector(
     plt.show()
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="Process an image into its edges by the Canny Edge Detector.")
+    parser.add_argument("--low-threshold", type=float, help="Optional tuning parameter for the gradient value below which pixels are suppressed", default=100, required=False)
+    parser.add_argument("--high-threshold", type=float, help="Optional tuning parameter for the gradient value below which pixels are suppressed", default=200, required=False)
+    parser.add_argument("--filter-size", type=lambda s: s.isdigit() and int(s)%2 != 0, help="Optional tuning parameter for the size of the Gaussian kernel (odd positive integer)", default=5, required=False)
+    parser.add_argument("--filter-sigma", type=float, help="Optional tuning parameter for the standard deviation of the Gaussian kernel", default=1, required=False)
+    args = parser.parse_args()
     image = get_image()
-    canny_edge_detector(image, low_threshold=205, high_threshold=225, filter_size=5, filter_sigma=0.2)
+
+    canny_edge_detector(image, low_threshold=args.low_threshold, high_threshold=args.high_threshold, filter_size=int(args.filter_size), filter_sigma=args.filter_sigma)
+    # canny_edge_detector(image, low_threshold=205, high_threshold=225, filter_size=5, filter_sigma=0.2)
