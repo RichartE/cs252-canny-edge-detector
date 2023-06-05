@@ -1,8 +1,8 @@
 # Canny Edge Detector
-This is a python implementation of the (Canny Edge Detector)[https://en.wikipedia.org/wiki/Canny_edge_detector] algorithm.
+This is a python implementation of the [Canny Edge Detector](https://en.wikipedia.org/wiki/Canny_edge_detector) algorithm.
 
 ## Installation
-This code runs on [Python](https://www.python.org/downloads/) (version 3.9 or greater) using the [Matplotlib](https://matplotlib.org/stable/users/getting_started/) and [NumPy](https://numpy.org/install/) libraries. This can pe done using pip by running the follow commands in the terminal after having installed Python:
+This code runs on [Python](https://www.python.org/downloads/) (version 3.9 or greater) using the [Matplotlib](https://matplotlib.org/stable/users/getting_started/) and [NumPy](https://numpy.org/install/) libraries. This can be done using pip by running the follow commands in the terminal after having installed Python:
 ```shell
 pip install numpy
 pip install matplotlib
