@@ -128,7 +128,7 @@ def calculate_intesity_gradient(image, operator="Sobel"):
 
 def lower_bound_cut_off_supression(gradient, direction):
     """
-    For each pixel we look at the neighboring pixels in the same direction a keep the gradient if the current pixel is the greates of the three and otherwise suprress it to 0.
+    For each pixel we look at the neighboring pixels in the same direction a keep the gradient if the current pixel is the greatest of the three and otherwise suprress it to 0.
 
     :param gradient: 2D numpy array representing the gradient of each pixel in the image
     :param direciton: 2D numpy array representing the direction of each pixel in the image

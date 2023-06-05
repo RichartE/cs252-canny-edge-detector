@@ -27,3 +27,18 @@ You can adjust the tunning parameters by passing the optional flags:
 ```shell
 --low-threshold 205 --high-threshold 225 --filter-size 5 --filter-sigma 0.2
 ```
+
+#### Image-Tiger
+```shell
+--low-threshold 20 --high-threshold 100
+```
+
+#### Image-Lizard
+```shell
+--low-threshold 100 --high-threshold 220 
+```
+
+#### Image-Anatomy
+```shell
+--low-threshold 15 --high-threshold 100 
+```
