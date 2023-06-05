@@ -18,8 +18,7 @@ def get_image_gui():
     root.withdraw()
 
     image_path = filedialog.askopenfilename(
-        title='Select the image to run the Canny Edge Detector on',
-        # filetypes=[('Images', '.jpg')]
+        title='Select the image to run the Canny Edge Detector on'
     )
     return image_path
 
