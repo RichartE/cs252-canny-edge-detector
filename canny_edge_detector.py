@@ -272,6 +272,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
     image = get_image()
 
-    canny_edge_detector(image, low_threshold=args.low_threshold, high_threshold=args.high_threshold, filter_size=int(args.filter_size), filter_sigma=args.filter_sigma)
-    # canny_edge_detector(image, low_threshold=205, high_threshold=225, filter_size=5, filter_sigma=0.2)
-    # testing on a lab computer
+    canny_edge_detector(
+        image,
+        low_threshold=args.low_threshold,
+        high_threshold=args.high_threshold,
+        filter_size=int(args.filter_size),
+        filter_sigma=args.filter_sigma
+    )
