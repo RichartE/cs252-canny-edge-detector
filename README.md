@@ -14,11 +14,11 @@ This code can be found at our [GitHub repo](https://github.com/RichartE/cs252-ca
 ### Adjusting the tunning parameters
 You can adjust the tunning parameters by passing the optional flags:
 
-  -h, --help            show the help message and exit
-  --low-threshold       the gradient value below which pixels are suppressed (float)
-  --high-threshold      the gradient value below which pixels are suppressed (float)
-  --filter-size         the size of the Gaussian kernel (odd positive integer)
-  --filter-sigma        the standard deviation of the Gaussian kernel (float)
+-  -h, --help            show the help message and exit
+-  --low-threshold       the gradient value below which pixels are suppressed (float)
+- --high-threshold      the gradient value below which pixels are suppressed (float)
+- --filter-size         the size of the Gaussian kernel (odd positive integer)
+- --filter-sigma        the standard deviation of the Gaussian kernel (float)
 
 ### Tuning parameters for provided images
 
